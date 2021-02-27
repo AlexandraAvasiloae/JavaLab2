@@ -19,6 +19,6 @@ public class Main {
 
         Problem p = new Problem(new Source[]{s1,s2,s3},new Destination[]{d1,d2,d3},new int [][]{{2,3,1},{5,4,8},{5,6,8}});
 
-        System.out.println(p.minimCostOfTransport(p.getCost()));
+        System.out.println("Costul minim al problemei este "+p.minimCostOfTransport(p.getCost()));
     }
 }
