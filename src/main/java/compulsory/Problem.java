@@ -99,4 +99,16 @@ public class Problem {
         }
         return minimCost;
     }
+    public void printCostMatrix(){
+        for (int i = 0; i < cost.length; i++) {
+            for (int j = 0; j < cost.length; j++) {
+                System.out.print(cost[i][j] + " ");
+            }
+            System.out.print(sources[i].getSupply());
+            System.out.println();
+        }
+        for (int i = 0; i < destinations.length; i++) {
+            System.out.print(destinations[i].getDemand() + " ");
+        }
+    }
 }
