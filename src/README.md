@@ -28,8 +28,37 @@ compulsory.Problem{sources=[compulsory.Source{name='S1', type=FACTORY, supply=10
 5 4 8 35
 5 6 8 25
 20 25 25 
-Costul minim al problemei este 315
+Costul minim al problemei este 330
 
 Process finished with exit code 0
 
 ```
+## Optional (2p)
+
+```
+(done) 1.Override the equals method form the Object class for the Source, Destination classes. The problem should not allow adding the same source or destination twice.
+(done) 2.Instead of using an enum, create dedicated classes for warehouses and factories. Source will become abstract.
+(done) 3.Create a class to describe the solution.
+(done) 4.Implement a simple algorithm for creating a feasible solution to the problem (one that satisfies the supply and demand constraints).
+(done) 5.Write doc comments in your source code and generate the class documentation using javadoc.
+
+OUTPUT
+
+Exemple1: The problem do not allow adding the same source or destination twice
+
+"C:\Program Files\Java\jdk1.8.0_281\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\lib\idea_rt.jar=49327:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Users\Alexandra\IdeaProjects\lab2\target\classes" optional.Main
+Invalid problem! There is the same source or the same destination in the problem instance
+
+Process finished with exit code 0
+
+Exemple2: 
+
+The problem instance is: 
+sources=[Source{name='S1', type=Factory, supply=10}, Source{name='S2', type=Warehouse, supply=35}, Source{name='S3', type=Warehouse, supply=25}]
+destinations=[Destination{name='D1', demand=20}, Destination{name='D2', demand=25}, Destination{name='D3', demand=25}]
+cost=[[2, 3, 1], [5, 4, 8], [5, 6, 8]]}
+The problem solution is the minim cost = 330
+
+Process finished with exit code 0
+```
+
