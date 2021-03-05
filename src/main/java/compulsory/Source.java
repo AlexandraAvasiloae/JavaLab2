@@ -6,9 +6,9 @@ public class Source {
     private int supply;
 
     public Source(String name, SourceType type, int supply) {
-        this.name=name;
-        this.type=type;
-        this.supply=supply;
+        this.name = name;
+        this.supply = supply;
+        this.type = type;
     }
 
     @Override

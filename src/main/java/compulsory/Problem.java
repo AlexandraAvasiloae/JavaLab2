@@ -23,7 +23,7 @@ public class Problem {
         return "compulsory.Problem{" +
                 "sources=" + Arrays.toString(sources) +
                 ", destinations=" + Arrays.toString(destinations) +
-                ", cost=" + Arrays.toString(cost) +
+                ", cost=" + Arrays.deepToString(cost) +
                 '}';
     }
 
